@@ -1,6 +1,7 @@
 package com.cb;
 
 import com.cb.controllers.MainController;
+import com.cb.controllers.SettingsController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import org.springframework.context.annotation.Bean;
@@ -22,6 +23,7 @@ public class ConfigurationController {
     public MainController getMainController() throws IOException {
         return (MainController) getMainView().getController();
     }
+
 
      protected View loadView(String url) throws IOException {
         InputStream fxmlStream = null;

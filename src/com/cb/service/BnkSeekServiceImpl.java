@@ -24,7 +24,7 @@ public class BnkSeekServiceImpl implements BnkSeekService {
     }
 
     @PostConstruct
-    public void generateTestData() {
+    public void loadDataFromFile() {
         save(new BnkSeekEntity("d","d","d","d",
                 "d","d","d","d","d","d","d","d","d","d","d"
                 ,"d","d","d","d","d","d",new Date(System.currentTimeMillis()),"d","d",

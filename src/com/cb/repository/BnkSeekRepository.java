@@ -8,7 +8,7 @@ import java.util.List;
 
 
 @Transactional(propagation = Propagation.MANDATORY)
-public interface BnkSeekRepository extends CrudRepository<BnkSeekEntity, Long> {
+    public interface BnkSeekRepository extends CrudRepository<BnkSeekEntity, Long> {
 
     List<BnkSeekEntity> findAll();
 
