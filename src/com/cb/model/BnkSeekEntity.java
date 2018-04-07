@@ -1,5 +1,8 @@
 package com.cb.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,6 +10,9 @@ import javax.persistence.Table;
 import java.io.Serializable;
 import java.sql.Date;
 
+
+@AllArgsConstructor
+@Data
 @Entity
 @Table
 public class BnkSeekEntity  implements Serializable {

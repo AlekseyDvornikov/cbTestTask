@@ -1,8 +1,9 @@
 package com.cb.controllers;
 
+import com.cb.model.BnkSeekEntity;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
@@ -13,9 +14,7 @@ import java.io.IOException;
 
 public class MainController {
 
-    // Переменные
-    private ObservableList<Contact> data;
-
+    private ObservableList<BnkSeekEntity> data;
 
     @FXML
     public void exit(){
@@ -24,8 +23,6 @@ public class MainController {
 
     @FXML
     public void showSettings(ActionEvent event){
-
-
     }
 
     public void sh(javafx.event.ActionEvent event) {
