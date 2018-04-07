@@ -13,6 +13,10 @@ import java.io.IOException;
 
 public class MainController {
 
+    // Переменные
+    private ObservableList<Contact> data;
+
+
     @FXML
     public void exit(){
         System.exit(0);
