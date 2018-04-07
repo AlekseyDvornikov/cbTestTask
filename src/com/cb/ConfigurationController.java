@@ -1,9 +1,10 @@
-package com.cb.config;
+package com.cb;
 
 import com.cb.controllers.MainController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;

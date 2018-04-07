@@ -1,4 +1,4 @@
-package com.cb.config;
+package com.cb;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan("com.cb")
 public class Main extends AbstractJavaFxApplicationSupport {
 
     @Value("${ui.title:JavaFX приложение}")//

@@ -1,12 +1,14 @@
-package com.cb.service.implementations;
+package com.cb.service;
 
 import com.cb.model.BnkSeekEntity;
 import com.cb.repository.BnkSeekRepository;
 import com.cb.service.BnkSeekService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
+import java.sql.Date;
 import java.util.List;
 
 
@@ -14,7 +16,7 @@ import java.util.List;
 @Transactional
 public class BnkSeekServiceImpl implements BnkSeekService {
 
-    private final BnkSeekRepository repository;
+    protected final BnkSeekRepository repository;
 
     @Autowired
     public BnkSeekServiceImpl(BnkSeekRepository repository) {
@@ -23,7 +25,10 @@ public class BnkSeekServiceImpl implements BnkSeekService {
 
     @PostConstruct
     public void generateTestData() {
-        //save(new BnkSeekEntity());
+        save(new BnkSeekEntity("d","d","d","d",
+                "d","d","d","d","d","d","d","d","d","d","d"
+                ,"d","d","d","d","d","d",new Date(System.currentTimeMillis()),"d","d",
+                new Date(System.currentTimeMillis()),new Date(System.currentTimeMillis()),"",new Date(System.currentTimeMillis())));
     }
 
     @Override

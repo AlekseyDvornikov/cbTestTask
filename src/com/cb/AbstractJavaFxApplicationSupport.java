@@ -1,4 +1,4 @@
-package com.cb.config;
+package com.cb;
 
 import javafx.application.Application;
 import org.springframework.boot.SpringApplication;

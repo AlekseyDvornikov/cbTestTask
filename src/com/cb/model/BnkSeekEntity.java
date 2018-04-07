@@ -17,6 +17,8 @@ import java.sql.Date;
 @Table
 public class BnkSeekEntity  implements Serializable {
 
+    public BnkSeekEntity(){}
+
     @Id
     @Column(nullable = false, unique = true)
     String vkey;
